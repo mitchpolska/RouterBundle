@@ -3,13 +3,13 @@ How to install
 
   1. cd src/
   2. git clone git://github.com/mitchpolska/RouterBundle.git
-  3. Edit file: vendor/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/config/routing.xml
-     Find and replace properties:
+  3. Open file: vendor/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/config/routing.xml
+  4. Find and replace parameters:
      
         <parameter key="router.options.generator_base_class">ITZ\RouterBundle\Component\Routing\Generator\UrlGenerator</parameter>
         <parameter key="router.options.matcher_dumper_class">ITZ\RouterBundle\Component\Routing\Matcher\Dumper\PhpMatcherDumper</parameter>
   
-  4. Clear cache
+  5. Clear cache
 
 Quick example
 =============
