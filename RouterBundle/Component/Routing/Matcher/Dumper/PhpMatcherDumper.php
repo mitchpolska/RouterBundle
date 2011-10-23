@@ -282,9 +282,9 @@ EOF
         } elseif ($compiledRoute->getDefaults()) {
             $code[] = sprintf('            return %s;', str_replace("\n", '', var_export(array_merge($compiledRoute->getDefaults(), array('_route' => $name)), true)));
         }
-        elseif ('' != $route->getHost()) {
-            $code[] = sprintf("            return array('_route' => '%s', '_controller' => '%s');", $name, $route->getHost());
-        }
+        //elseif ('' != $route->getHost()) {
+        //    $code[] = sprintf("            return array('_route' => '%s', '_controller' => '%s');", $name, $route->getHost());
+        //}
          else {
             $code[] = sprintf("            return array('_route' => '%s');", $name);
         }
