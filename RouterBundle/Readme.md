@@ -5,8 +5,10 @@ How to install
   2. git clone git://github.com/mitchpolska/RouterBundle.git
   3. Edit file: vendor/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/config/routing.xml
      Find and replace properties:
-      <parameter key="router.options.generator_base_class">ITZ\RouterBundle\Component\Routing\Generator\UrlGenerator</parameter>
-      <parameter key="router.options.matcher_dumper_class">ITZ\RouterBundle\Component\Routing\Matcher\Dumper\PhpMatcherDumper</parameter>
+     
+        <parameter key="router.options.generator_base_class">ITZ\RouterBundle\Component\Routing\Generator\UrlGenerator</parameter>
+        <parameter key="router.options.matcher_dumper_class">ITZ\RouterBundle\Component\Routing\Matcher\Dumper\PhpMatcherDumper</parameter>
+  
   4. Clear cache
 
 Quick example
